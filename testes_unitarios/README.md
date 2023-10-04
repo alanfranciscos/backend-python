@@ -51,7 +51,8 @@ Quando há métodos que serão utilizados apenas dentro da classe, se cploca um 
 - Criação de testes
 - Geração de códigos
 - Refatoração do código
-  ![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled.png)
+  
+![tdd](https://github.com/alanfranciscos/backend-python/assets/74225176/8530ce18-5a4a-4920-89b7-994da68a41f7)
 
 ## Testes de Exception
 
@@ -178,12 +179,13 @@ Porém, dessa maneira rodará arquivos da própria pasta de testes, como mostrad
 - Stmts(STATEMENTS): linhas de código que se tem naquele arquivo
 - Miss: Existe a perda de x linhas para a cobertura de testes
 - Cover: A porcentagem de cobertura de testes no arquivo
-
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%201.png)
+  
+![Untitled](https://github.com/alanfranciscos/backend-python/assets/74225176/35bd3750-ea42-4bb9-81c8-3efea80fceed)
 
 Estrutura do projeto:
 
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%202.png)
+![Untitled (1)](https://github.com/alanfranciscos/backend-python/assets/74225176/fe705e0b-b935-444d-ac47-34e627617c22)
+
 
 Para solucionar o problema de rodar onde não precisa, podemos especificar a diretorio que queremos rodar os testes com o seguinte comando:
 
@@ -195,7 +197,7 @@ pytest --cov=codigo tests/
 
 Assim, temos o seguinte resultado:
 
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%203.png)
+![Untitled (2)](https://github.com/alanfranciscos/backend-python/assets/74225176/433eb180-e232-4682-a9eb-5e5494370cbd)
 
 ## Como descobrir qual linha não foi testada
 
@@ -207,11 +209,13 @@ pytest --cov=codigo tests/ --cov-report term-missing
 
 Ao rodar esse comando, tem-se a linha que ainda falta ser coberta pelo codigo em uma coluna extra no terminal
 
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%204.png)
+![Untitled (3)](https://github.com/alanfranciscos/backend-python/assets/74225176/8735d580-b5a6-49c3-95cb-6fce81fe713a)
+
 
 Ao solucionar o problema da linha faltante, o seu terminal ao rodar o mesmo comando ficará da seguinte maneira:
 
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%205.png)
+![Untitled (4)](https://github.com/alanfranciscos/backend-python/assets/74225176/e3fcbbfd-8557-401e-a3ad-d98220bc4709)
+
 
 Para facilitar a leitura, podemos jogar a cobertura para um arquivo html da seguinte maneira:
 
@@ -221,7 +225,7 @@ pytest --cov=codigo tests/ --cov-report html
 
 Isso gerará arquivos, você pode abrir o arquivo html gerado na pasta “htmlcov” e isso o levará para uma pagina parecida com essa, **lembre de adicionar a pasta em questão ao gitignore**:
 
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%206.png)
+![Untitled (5)](https://github.com/alanfranciscos/backend-python/assets/74225176/6a278f43-70aa-47fd-988c-a17bbbba48c6)
 
 - Item 1
   - Ao clicar em run, você verá todos as linhas cobertas
@@ -252,7 +256,7 @@ pytest --cov=codigo tests/ --cov-report term-missing
 
 Você vai obter o seguinte resultado:
 
-![Untitled](Testes%20428a4919b5e944a9a3e33da60296ec2b/Untitled%207.png)
+![Untitled (6)](https://github.com/alanfranciscos/backend-python/assets/74225176/40de249b-3822-4ad5-b218-926aa3dc5391)
 
 Note que agora, você tem 33 stmts e não mais 34, pois ele não está mais cobrindo o dunder **str**.
 
@@ -320,3 +324,5 @@ Assim, ele gerará o relatorio na pasta “coverage_relatorio_html”
 [Montando cenários de testes com o Pytest | Alura](https://www.alura.com.br/artigos/montando-cenarios-de-testes-com-o-pytest?_gl=1*1ii7h1k*_ga*NzIzOTA0NjI5LjE2NTQwMDA5NDc.*_ga_1EPWSW3PCS*MTY5NjM1MzU2MS4xNC4xLjE2OTYzNTgxMTAuMC4wLjA.*_fplc*V0g0ajJDOWJaekFrMDZPeEhIWkUyeTZaaTdseW9CWHJLZVBrTyUyQlFWS043ektzMU9HcDIxVmZCQjJEU1FnWkRvaTZPNTREdyUyRmNDSE1UWFRoRlRsTXY3b1lQWlltbUt6anQlMkJrQVpOWjNFN3pjUFdIV0w0NXRwem1GVDNlY2JRJTNEJTNE)
 
 [Full pytest documentation — pytest documentation](https://docs.pytest.org/en/7.1.x/contents.html)
+
+[Documentação no notion](https://www.notion.so/Testes-428a4919b5e944a9a3e33da60296ec2b)
